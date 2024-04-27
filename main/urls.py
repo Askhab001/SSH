@@ -5,7 +5,7 @@ from .views import ProductListCreateAPIView, ProductRetrieveUpdateDestroyAPIView
 urlpatterns = [
     path('products/', ProductListCreateAPIView.as_view(), name='product-list-create'),
     path('products/aza/', ProductRetrieveUpdateDestroyAPIView.as_view(), name='product-detail'),
-    path('MyView1/', login_required(MyView.as_view()))
+    path('MyView2/', login_required(MyView.as_view()))
 ]
 
 
